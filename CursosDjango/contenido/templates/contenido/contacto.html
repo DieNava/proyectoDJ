@@ -1,0 +1,33 @@
+{% extends "contenido/estilo.html"%}
+
+{% block titulo %} Contactanos {% endblock%}
+
+
+{% block contenido %}
+
+    <div class="container">
+        
+        <h1> CONTACTO </h1>
+        <img src="contenido/static/contenido/images/contacto.png" alt="Logo UTM">
+        <h3> Ingresa tus datos: </h3>
+        <form action="/submit_contact_form" method="POST">
+            <p>Nombre:<input type="text" name="nombre"></p>
+            <p>Correo Electrónico: <input type="text" name="correo"></p> 
+            <p>Cursos:
+                <select name="cursos">  
+                    <option>Base de Datos</option>  
+                    <option>HTML</option>  
+                    <option>Redes</option>  
+                    <option>Ciberseguridad</option>  
+                </select>
+            </p>
+            <p>Comentarios:</p>
+            <p><textarea cols="50" rows="10" name="comentarios"></textarea></p>
+            <p><input type="button" name="enviar" value="Enviar"/></p>
+        </form>
+    </div>
+    {% endblock %}
+</body>
+</html>
+
+    

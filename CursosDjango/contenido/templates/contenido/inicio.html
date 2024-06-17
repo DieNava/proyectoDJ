@@ -1,0 +1,22 @@
+{% extends "contenido/estilo.html"%}
+
+{% block titulo %} Inicio {% endblock%}
+
+
+{% block contenido%}
+
+        <div class="content">
+            <div class="container">
+                
+                <h1>La Escuelita</h1>
+                <h2>Aquí encontrarás los mejores cursos de todo México</h2>
+                <a href="{% url 'Inicio' %}"><input type="button" value="INICIO"></a>
+                <a href="{% url 'Cursos' %}"><input type="button" value="CURSOS"></a>
+                <a href="{% url 'Contacto' %}"><input type="button" value="CONTÁCTANOS"></a>
+
+            </div>
+        </div>
+        
+        
+{% endblock%}
+

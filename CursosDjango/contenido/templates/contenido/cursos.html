@@ -1,0 +1,26 @@
+    {% extends "contenido/estilo.html"%}
+
+    {% block titulo %} Cursos {% endblock%}
+
+    {% block contenido %}
+    <div class="content">
+        <div class="container">
+            <h1>CURSOS</h1>
+            <img src="contenido/images/contacto.png">
+            <h3> Consulta los cursos disponibles. </h3>
+            
+            <form action="/submit_contact_form" method="POST">
+                <p>Cursos:
+                    <select name="cursos">  
+                        <option>Base de Datos</option>  
+                        <option>HTML</option>  
+                        <option>Redes</option>  
+                        <option>Ciberseguridad</option>  
+                    </select>
+                </p>
+            </form>
+            
+        </div>
+    </div>
+    {% endblock %}
+ 
